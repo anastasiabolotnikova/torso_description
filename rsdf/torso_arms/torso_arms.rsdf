@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="torso">
+  <!-- Required: pbvs_robogami_controller attaches the first robogami module here via
+       mc_control::Contact("torso", module, "Top", "Base"); robogami's own "Base"/"Top"
+       surfaces are single-point too, so this matches that mating convention. -->
+  <planar_surface name="Top" link="torso">
+    <origin xyz="0.0 0.0 0.25" rpy="0.0 0.0 0.0" />
+    <points>
+      <point xy="0.0 0.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="Front" link="torso">
+    <origin xyz="0.12 0 0" rpy="3.14159 -1.570796 0" />
+    <points>
+      <point xy="0.0 0.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="Back" link="torso">
+    <origin xyz="-0.12 0 0" rpy="3.14159 -1.570796 0" />
+    <points>
+      <point xy="0.0 0.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+</robot>

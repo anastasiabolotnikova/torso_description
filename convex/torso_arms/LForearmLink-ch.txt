@@ -1,0 +1,772 @@
+3
+62 94 141
+-0.03247907356739717 0.1774413917364277 -0.007300823213701406 
+-0.03402794739934908 0.1724887358351742 -0.01974217127888876 
+-0.003479584650879677 0.1864561137488882 -0.04428452572688865 
+0.009790262271687982 0.2079742708476563 0.008019568387849165 
+0.04429721856122996 -0.009077795089139973 0.01460191856228493 
+0.01291690379703005 0.1952165671938217 -0.04096921624731256 
+-0.02401977311427782 0.1868528489813899 4.792496486173063e-05 
+0.03601569812545295 0.2452249839486637 -0.005587499414213986 
+0.03051762160506728 -0.03232073447150744 -0.00872104954382961 
+0.003761843942732477 -0.03820828187901085 -0.0168672876520246 
+0.01931340119092791 -0.01255702557780885 -0.04171767086777927 
+0.01770821746824266 -0.01307050673050834 0.03914379005531834 
+0.0008878221923165918 -0.04065673916166045 0.008497355432233929 
+-0.00531761852025204 0.2422957438241081 -0.03085867997835168 
+-0.01185039777864908 0.2414180134075404 -0.009093220622391377 
+-0.01148120365607822 0.2446399245265929 -0.01538165811519342 
+0.01582256488350829 0.2469659937387074 9.752742808256425e-05 
+0.02846388422505836 0.2094478752017992 -0.03431197889918364 
+0.04276525500644637 0.231970715556204 -0.01500448194725992 
+-0.03340092048861149 0.1275723423238742 -0.04189088757647826 
+0.02324748331752728 0.2435034963438909 -0.04037933188681846 
+0.04096541854757664 0.2447257994137683 -0.03437504387875612 
+-0.001334407960749533 0.2583577921355751 -0.01728768099654494 
+0.01661796519541438 0.2629641523119453 -0.02130054528237065 
+0.03816835379701486 0.2556011840314688 -0.02885036168528695 
+0.02310964943689901 0.2519593004965133 -0.03776424613907483 
+0.001731941819705791 0.2544902106312336 -0.03469955990509598 
+0.02431684660015588 0.256290673835425 -0.003720104039564325 
+-0.00283549870553736 0.2545222185659152 -0.00756815751307184 
+-0.009744848456452378 -0.02736647773086244 -0.03355054359245783 
+-0.01826939795789823 -0.01521168119052451 0.02702801055128751 
+0.04278881826736658 -0.00252271399636175 -0.02177860457765671 
+-0.04821302701944657 0.1216424173640744 -0.007169235676049979 
+-0.0003163820280164401 0.09345842123616541 -0.05688596299799119 
+0.02031078625398858 0.1491677805943198 0.01766971909344127 
+-0.04375750467806679 0.09181921143789257 -0.02850770420349483 
+-0.02024079229005595 0.1033624774126501 -0.05198718799600952 
+0.04076415027236088 0.1502831044529422 -0.02145618939309607 
+0.0250765731579555 0.1050715153437975 -0.04783133387985282 
+-0.03265207989720589 0.07319303706454595 0.02522503920559282 
+-0.04555531184943113 0.02702875324433603 0.001824060772235379 
+-0.03876418620915974 0.02509212164724277 0.01139417017411788 
+-0.0401449213779226 -0.01881529255420913 -0.001408439247501982 
+0.03481811645930922 -0.0001487090180489141 0.02493521194152629 
+0.03955822000911601 0.03841759125828412 -0.01866200038844676 
+0.04325092028671979 0.06428824976211128 0.01382659317155991 
+-0.00521287023544216 0.1215889029537948 0.03106243225945339 
+0.04089819639385894 0.02470690672113829 0.009743272178236265 
+-0.02635933422662239 -0.01211201820112889 0.01486265041321843 
+-0.009887830937155557 0.01861614055383339 0.03756482585176712 
+-0.03025355851810891 0.1146868619674806 0.02012128264991388 
+0.03990608503880424 0.1306241018969306 0.0006236210407913084 
+0.03754796633598814 0.1839662131687164 -0.02339535713244889 
+-0.0312299575999351 0.1419156370600792 0.01419604420960102 
+0.04045068808734101 0.05267467925684954 -0.000765892870541818 
+-0.003590437859380873 0.2238692934046869 0.0004272752199312842 
+0.01211521661951408 0.08548170513684693 0.03484305913056277 
+0.03086522092176147 0.0722746781350803 0.02746529656581955 
+0.003734502019922404 0.0207787099965855 -0.04764445100590392 
+-0.03404527398722195 0.03990928788557854 -0.03824102783522289 
+-0.01597562061561602 0.0003077346934855621 -0.04539490335691267 
+-0.03972746479133968 -0.0128292497031058 -0.01710360587733232 
+3 53 28 46 
+3 59 35 61 
+3 59 19 35 
+3 35 19 32 
+3 10 38 33 
+3 38 20 33 
+3 20 38 21 
+3 38 31 21 
+3 31 38 10 
+3 22 26 23 
+3 28 22 23 
+3 22 15 26 
+3 15 22 28 
+3 11 12 30 
+3 53 39 32 
+3 20 25 26 
+3 26 25 23 
+3 25 24 23 
+3 24 25 21 
+3 25 20 21 
+3 60 59 61 
+3 20 2 33 
+3 2 20 26 
+3 36 19 59 
+3 36 60 33 
+3 60 36 59 
+3 2 36 33 
+3 19 36 26 
+3 36 2 26 
+3 19 1 32 
+3 53 14 28 
+3 14 15 28 
+3 12 42 30 
+3 9 42 12 
+3 50 53 46 
+3 39 50 46 
+3 50 39 53 
+3 49 11 30 
+3 39 49 30 
+3 49 39 46 
+3 58 10 33 
+3 60 58 33 
+3 58 60 10 
+3 15 13 26 
+3 1 13 15 
+3 13 19 26 
+3 13 1 19 
+3 0 53 32 
+3 0 14 53 
+3 1 0 32 
+3 0 1 15 
+3 14 0 15 
+3 56 49 46 
+3 49 56 11 
+3 28 16 46 
+3 18 31 4 
+3 31 18 21 
+3 18 24 21 
+3 18 7 24 
+3 60 29 10 
+3 29 9 10 
+3 29 60 61 
+3 42 29 61 
+3 29 42 9 
+3 8 31 10 
+3 9 8 10 
+3 31 8 4 
+3 8 9 12 
+3 8 11 4 
+3 8 12 11 
+3 39 40 32 
+3 40 42 61 
+3 40 35 32 
+3 35 40 61 
+3 56 57 11 
+3 57 56 7 
+3 27 56 46 
+3 16 27 46 
+3 56 27 7 
+3 24 27 23 
+3 7 27 24 
+3 27 28 23 
+3 27 16 28 
+3 41 39 30 
+3 41 40 39 
+3 42 41 30 
+3 40 41 42 
+3 11 43 4 
+3 43 57 4 
+3 57 43 11 
+3 18 45 7 
+3 45 57 7 
+3 45 18 4 
+3 57 45 4 
+Vertices and facets:
+- p53(v12): -0.031  0.14 0.014
+- p28(v11): -0.0028  0.25 -0.0076
+- p46(v6): -0.0052  0.12 0.031
+- p59(v16): -0.034  0.04 -0.038
+- p35(v9): -0.044 0.092 -0.029
+- p61(v5): -0.04 -0.013 -0.017
+- p19(v17): -0.033  0.13 -0.042
+- p32(v1): -0.048  0.12 -0.0072
+- p38(v19): 0.025  0.11 -0.048
+- p10(v10): 0.019 -0.013 -0.042
+- p33(v4): -0.00032 0.093 -0.057
+- p20(v15): 0.023  0.24 -0.04
+- p21(v8): 0.041  0.24 -0.034
+- p31(v18): 0.043 -0.0025 -0.022
+- p22(v21): -0.0013  0.26 -0.017
+- p26(v7): 0.0017  0.25 -0.035
+- p23(v3): 0.017  0.26 -0.021
+- p15(v20): -0.011  0.24 -0.015
+- p12(v23): 0.00089 -0.041 0.0085
+- p11(v22): 0.018 -0.013 0.039
+- p30(v13): -0.018 -0.015 0.027
+- p39(v24): -0.033 0.073 0.025
+- p25(v25): 0.023  0.25 -0.038
+- p24(v14): 0.038  0.26 -0.029
+- p60(v26): -0.016 0.00031 -0.045
+- p2(v27): -0.0035  0.19 -0.044
+- p36(v28): -0.02   0.1 -0.052
+- p1(v29): -0.034  0.17 -0.02
+- p14(v30): -0.012  0.24 -0.0091
+- p42(v33): -0.04 -0.019 -0.0014
+- p9(v32): 0.0038 -0.038 -0.017
+- p50(v34): -0.03  0.11  0.02
+- p49(v35): -0.0099 0.019 0.038
+- p58(v36): 0.0037 0.021 -0.048
+- p13(v37): -0.0053  0.24 -0.031
+- p0(v38): -0.032  0.18 -0.0073
+- p56(v39): 0.012 0.085 0.035
+- p16(v40): 0.016  0.25 9.8e-05
+- p18(v41): 0.043  0.23 -0.015
+- p4(v2): 0.044 -0.0091 0.015
+- p7(v31): 0.036  0.25 -0.0056
+- p29(v42): -0.0097 -0.027 -0.034
+- p8(v43): 0.031 -0.032 -0.0087
+- p40(v44): -0.046 0.027 0.0018
+- p57(v45): 0.031 0.072 0.027
+- p27(v46): 0.024  0.26 -0.0037
+- p41(v47): -0.039 0.025 0.011
+- p43(v48): 0.035 -0.00015 0.025
+- p45(v49): 0.043 0.064 0.014
+- f35
+    - flags: top simplicial
+    - normal:   -0.3699   0.2654   0.8904
+    - offset: -0.06185004
+    - vertices: p53(v12) p28(v11) p46(v6)
+    - neighboring facets: f166 f142 f118
+- f53
+    - flags: top simplicial
+    - normal:   -0.8909 -0.08297  -0.4465
+    - offset: -0.0440955
+    - vertices: p59(v16) p35(v9) p61(v5)
+    - neighboring facets: f192 f101 f58
+- f58
+    - flags: bottom simplicial
+    - normal:   -0.7623 -0.02133  -0.6469
+    - offset: -0.04983861
+    - vertices: p19(v17) p59(v16) p35(v9)
+    - neighboring facets: f53 f60 f108
+- f60
+    - flags: bottom simplicial
+    - normal:     -0.92   0.1277  -0.3706
+    - offset: -0.0625503
+    - vertices: p19(v17) p35(v9) p32(v1)
+    - neighboring facets: f191 f116 f58
+- f64
+    - flags: bottom simplicial
+    - normal:    0.3618 -0.06606  -0.9299
+    - offset: -0.04661086
+    - vertices: p38(v19) p10(v10) p33(v4)
+    - neighboring facets: f149 f65 f68
+- f65
+    - flags: top simplicial
+    - normal:    0.3129  0.05518  -0.9482
+    - offset: -0.05899649
+    - vertices: p38(v19) p20(v15) p33(v4)
+    - neighboring facets: f106 f64 f66
+- f66
+    - flags: bottom simplicial
+    - normal:     0.317  0.05516  -0.9468
+    - offset: -0.05903283
+    - vertices: p38(v19) p20(v15) p21(v8)
+    - neighboring facets: f99 f67 f65
+- f67
+    - flags: top simplicial
+    - normal:    0.7721 -0.02666   -0.635
+    - offset: -0.04693207
+    - vertices: p38(v19) p31(v18) p21(v8)
+    - neighboring facets: f173 f66 f68
+- f68
+    - flags: bottom simplicial
+    - normal:    0.6632 -0.07122   -0.745
+    - offset: -0.04478398
+    - vertices: p38(v19) p31(v18) p10(v10)
+    - neighboring facets: f181 f64 f67
+- f74
+    - flags: top simplicial
+    - normal:   -0.2936   0.9209  -0.2563
+    - offset: -0.2427548
+    - vertices: p22(v21) p26(v7) p23(v3)
+    - neighboring facets: f96 f75 f76
+- f75
+    - flags: bottom simplicial
+    - normal:   -0.1615   0.9262   0.3406
+    - offset: -0.2336289
+    - vertices: p22(v21) p28(v11) p23(v3)
+    - neighboring facets: f203 f74 f77
+- f76
+    - flags: top simplicial
+    - normal:    -0.793   0.5501  -0.2618
+    - offset: -0.1477197
+    - vertices: p22(v21) p15(v20) p26(v7)
+    - neighboring facets: f152 f74 f77
+- f77
+    - flags: bottom simplicial
+    - normal:   -0.7909    0.601    0.115
+    - offset: -0.1543423
+    - vertices: p22(v21) p15(v20) p28(v11)
+    - neighboring facets: f119 f75 f76
+- f85
+    - flags: bottom simplicial
+    - normal:   -0.2005  -0.6709   0.7139
+    - offset: -0.03316469
+    - vertices: p12(v23) p11(v22) p30(v13)
+    - neighboring facets: f145 f136 f186
+- f92
+    - flags: bottom simplicial
+    - normal:    -0.825   0.1062   0.5551
+    - offset: -0.04870929
+    - vertices: p39(v24) p53(v12) p32(v1)
+    - neighboring facets: f156 f187 f144
+- f95
+    - flags: bottom simplicial
+    - normal:   -0.1017   0.2924  -0.9509
+    - offset: -0.1072349
+    - vertices: p25(v25) p20(v15) p26(v7)
+    - neighboring facets: f107 f96 f99
+- f96
+    - flags: bottom simplicial
+    - normal:   0.01997   0.8348  -0.5502
+    - offset: -0.2315797
+    - vertices: p25(v25) p26(v7) p23(v3)
+    - neighboring facets: f74 f97 f95
+- f97
+    - flags: top simplicial
+    - normal:    0.1054   0.8454  -0.5235
+    - offset: -0.2352263
+    - vertices: p25(v25) p24(v14) p23(v3)
+    - neighboring facets: f201 f96 f98
+- f98
+    - flags: bottom simplicial
+    - normal:    0.3512   0.4943  -0.7952
+    - offset: -0.1626858
+    - vertices: p25(v25) p24(v14) p21(v8)
+    - neighboring facets: f174 f99 f97
+- f99
+    - flags: top simplicial
+    - normal:    0.2896   0.2871  -0.9131
+    - offset: -0.1135122
+    - vertices: p25(v25) p20(v15) p21(v8)
+    - neighboring facets: f66 f98 f95
+- f101
+    - flags: top simplicial
+    - normal:   -0.7036  -0.1977  -0.6825
+    - offset: -0.04216285
+    - vertices: p60(v26) p59(v16) p61(v5)
+    - neighboring facets: f53 f178 f110
+- f106
+    - flags: bottom simplicial
+    - normal:   -0.1311   0.1287   -0.983
+    - offset: -0.06798988
+    - vertices: p2(v27) p20(v15) p33(v4)
+    - neighboring facets: f65 f111 f107
+- f107
+    - flags: top simplicial
+    - normal:   -0.1797   0.1507  -0.9721
+    - offset: -0.07177712
+    - vertices: p2(v27) p20(v15) p26(v7)
+    - neighboring facets: f95 f113 f106
+- f108
+    - flags: top simplicial
+    - normal:   -0.6396 -0.02728  -0.7682
+    - offset: -0.05006406
+    - vertices: p36(v28) p19(v17) p59(v16)
+    - neighboring facets: f58 f110 f112
+- f109
+    - flags: top simplicial
+    - normal:    -0.272 -0.07264  -0.9595
+    - offset: -0.04788186
+    - vertices: p36(v28) p60(v26) p33(v4)
+    - neighboring facets: f150 f111 f110
+- f110
+    - flags: bottom simplicial
+    - normal:   -0.5064  -0.0759  -0.8589
+    - offset: -0.04705856
+    - vertices: p36(v28) p60(v26) p59(v16)
+    - neighboring facets: f101 f108 f109
+- f111
+    - flags: bottom simplicial
+    - normal:   -0.1772   0.1262   -0.976
+    - offset: -0.06737614
+    - vertices: p36(v28) p2(v27) p33(v4)
+    - neighboring facets: f106 f109 f113
+- f112
+    - flags: bottom simplicial
+    - normal:   -0.3969   0.1611  -0.9036
+    - offset: -0.07165905
+    - vertices: p36(v28) p19(v17) p26(v7)
+    - neighboring facets: f154 f113 f108
+- f113
+    - flags: top simplicial
+    - normal:   -0.3549    0.157  -0.9216
+    - offset: -0.07132698
+    - vertices: p36(v28) p2(v27) p26(v7)
+    - neighboring facets: f107 f112 f111
+- f116
+    - flags: bottom simplicial
+    - normal:   -0.9169   0.1661  -0.3628
+    - offset: -0.06701435
+    - vertices: p1(v29) p19(v17) p32(v1)
+    - neighboring facets: f60 f158 f155
+- f118
+    - flags: bottom simplicial
+    - normal:   -0.5543   0.2905     0.78
+    - offset: -0.06961075
+    - vertices: p14(v30) p53(v12) p28(v11)
+    - neighboring facets: f35 f119 f157
+- f119
+    - flags: top simplicial
+    - normal:   -0.8147   0.5342   0.2258
+    - offset: -0.1365547
+    - vertices: p14(v30) p15(v20) p28(v11)
+    - neighboring facets: f77 f118 f160
+- f136
+    - flags: bottom simplicial
+    - normal:      -0.5  -0.7233   0.4763
+    - offset: -0.03301023
+    - vertices: p42(v33) p12(v23) p30(v13)
+    - neighboring facets: f85 f207 f139
+- f139
+    - flags: bottom simplicial
+    - normal:   -0.4398  -0.8878  -0.1355
+    - offset: -0.03455237
+    - vertices: p42(v33) p9(v32) p12(v23)
+    - neighboring facets: f184 f136 f180
+- f142
+    - flags: top simplicial
+    - normal:   -0.4346   0.1766   0.8832
+    - offset: -0.05117107
+    - vertices: p50(v34) p53(v12) p46(v6)
+    - neighboring facets: f35 f143 f144
+- f143
+    - flags: bottom simplicial
+    - normal:   -0.4277   0.1347   0.8938
+    - offset: -0.04636821
+    - vertices: p50(v34) p39(v24) p46(v6)
+    - neighboring facets: f148 f142 f144
+- f144
+    - flags: top simplicial
+    - normal:   -0.7049   0.1266   0.6979
+    - offset: -0.04988712
+    - vertices: p50(v34) p39(v24) p53(v12)
+    - neighboring facets: f92 f142 f143
+- f145
+    - flags: top simplicial
+    - normal:   -0.3002  -0.2151   0.9293
+    - offset: -0.0338734
+    - vertices: p49(v35) p11(v22) p30(v13)
+    - neighboring facets: f85 f146 f163
+- f146
+    - flags: bottom simplicial
+    - normal:   -0.6264 -0.08611   0.7747
+    - offset: -0.03369326
+    - vertices: p49(v35) p39(v24) p30(v13)
+    - neighboring facets: f205 f145 f148
+- f148
+    - flags: top simplicial
+    - normal:   -0.3314  0.07444   0.9406
+    - offset: -0.0399942
+    - vertices: p49(v35) p39(v24) p46(v6)
+    - neighboring facets: f143 f162 f146
+- f149
+    - flags: top simplicial
+    - normal:    0.1212  -0.1186  -0.9855
+    - offset: -0.04494381
+    - vertices: p58(v36) p10(v10) p33(v4)
+    - neighboring facets: f64 f150 f151
+- f150
+    - flags: bottom simplicial
+    - normal:   0.01681  -0.1252   -0.992
+    - offset: -0.04472412
+    - vertices: p58(v36) p60(v26) p33(v4)
+    - neighboring facets: f109 f149 f151
+- f151
+    - flags: top simplicial
+    - normal:   0.04686  -0.1536   -0.987
+    - offset: -0.04400995
+    - vertices: p58(v36) p60(v26) p10(v10)
+    - neighboring facets: f176 f149 f150
+- f152
+    - flags: bottom simplicial
+    - normal:   -0.8447   0.3649  -0.3916
+    - offset: -0.1049987
+    - vertices: p13(v37) p15(v20) p26(v7)
+    - neighboring facets: f76 f154 f153
+- f153
+    - flags: bottom simplicial
+    - normal:   -0.8712   0.2959  -0.3918
+    - offset: -0.08842069
+    - vertices: p13(v37) p1(v29) p15(v20)
+    - neighboring facets: f159 f152 f155
+- f154
+    - flags: top simplicial
+    - normal:   -0.7535   0.2432  -0.6108
+    - offset: -0.08177949
+    - vertices: p13(v37) p19(v17) p26(v7)
+    - neighboring facets: f112 f152 f155
+- f155
+    - flags: top simplicial
+    - normal:   -0.8113   0.2494  -0.5288
+    - offset: -0.08107098
+    - vertices: p13(v37) p1(v29) p19(v17)
+    - neighboring facets: f116 f154 f153
+- f156
+    - flags: top simplicial
+    - normal:   -0.8584   0.2431   0.4517
+    - offset: -0.06772297
+    - vertices: p0(v38) p53(v12) p32(v1)
+    - neighboring facets: f92 f158 f157
+- f157
+    - flags: top simplicial
+    - normal:   -0.8166   0.2775    0.506
+    - offset:  -0.072069
+    - vertices: p0(v38) p14(v30) p53(v12)
+    - neighboring facets: f118 f156 f160
+- f158
+    - flags: bottom simplicial
+    - normal:   -0.9624   0.2714  0.01177
+    - offset: -0.07932927
+    - vertices: p0(v38) p1(v29) p32(v1)
+    - neighboring facets: f116 f156 f159
+- f159
+    - flags: top simplicial
+    - normal:   -0.9545   0.2983 9.46e-05
+    - offset: -0.08392438
+    - vertices: p0(v38) p1(v29) p15(v20)
+    - neighboring facets: f153 f160 f158
+- f160
+    - flags: bottom simplicial
+    - normal:   -0.9459   0.3079   0.1022
+    - offset: -0.08460507
+    - vertices: p0(v38) p14(v30) p15(v20)
+    - neighboring facets: f119 f159 f157
+- f162
+    - flags: top simplicial
+    - normal:  -0.07869  0.06638   0.9947
+    - offset: -0.03937913
+    - vertices: p56(v39) p49(v35) p46(v6)
+    - neighboring facets: f148 f198 f163
+- f163
+    - flags: bottom simplicial
+    - normal:  -0.007597  0.04317    0.999
+    - offset: -0.03840743
+    - vertices: p56(v39) p49(v35) p11(v22)
+    - neighboring facets: f145 f194 f162
+- f166
+    - flags: bottom simplicial
+    - normal:   -0.2688   0.2732   0.9236
+    - offset: -0.06331134
+    - vertices: p16(v40) p28(v11) p46(v6)
+    - neighboring facets: f35 f199 f204
+- f172
+    - flags: top simplicial
+    - normal:    0.9992  0.00129 -0.04119
+    - offset: -0.04364635
+    - vertices: p18(v41) p31(v18) p4(v2)
+    - neighboring facets: f183 f214 f173
+- f173
+    - flags: bottom simplicial
+    - normal:    0.9959 0.002721 -0.09074
+    - offset: -0.04458147
+    - vertices: p18(v41) p31(v18) p21(v8)
+    - neighboring facets: f67 f174 f172
+- f174
+    - flags: top simplicial
+    - normal:    0.9734    0.222  0.05576
+    - offset: -0.09229898
+    - vertices: p18(v41) p24(v14) p21(v8)
+    - neighboring facets: f98 f173 f175
+- f175
+    - flags: top simplicial
+    - normal:    0.9236    0.311   0.2242
+    - offset: -0.1082831
+    - vertices: p18(v41) p7(v31) p24(v14)
+    - neighboring facets: f202 f174 f212
+- f176
+    - flags: bottom simplicial
+    - normal:  -0.05159  -0.4027  -0.9139
+    - offset: -0.04218483
+    - vertices: p29(v42) p60(v26) p10(v10)
+    - neighboring facets: f151 f177 f178
+- f177
+    - flags: top simplicial
+    - normal:    0.1975  -0.7412  -0.6416
+    - offset: -0.03988519
+    - vertices: p29(v42) p9(v32) p10(v10)
+    - neighboring facets: f182 f176 f180
+- f178
+    - flags: top simplicial
+    - normal:   -0.5852  -0.4268  -0.6895
+    - offset: -0.04051597
+    - vertices: p29(v42) p60(v26) p61(v5)
+    - neighboring facets: f101 f179 f176
+- f179
+    - flags: bottom simplicial
+    - normal:   -0.5473   -0.777  -0.3109
+    - offset: -0.0370296
+    - vertices: p29(v42) p42(v33) p61(v5)
+    - neighboring facets: f188 f178 f180
+- f180
+    - flags: top simplicial
+    - normal:   -0.4535  -0.8691  -0.1977
+    - offset: -0.03483443
+    - vertices: p29(v42) p42(v33) p9(v32)
+    - neighboring facets: f139 f177 f179
+- f181
+    - flags: top simplicial
+    - normal:    0.6727  -0.5114  -0.5347
+    - offset: -0.04172142
+    - vertices: p8(v43) p31(v18) p10(v10)
+    - neighboring facets: f68 f182 f183
+- f182
+    - flags: bottom simplicial
+    - normal:    0.3377  -0.7525  -0.5654
+    - offset: -0.0395591
+    - vertices: p8(v43) p9(v32) p10(v10)
+    - neighboring facets: f177 f181 f184
+- f183
+    - flags: bottom simplicial
+    - normal:    0.9003  -0.4203  -0.1131
+    - offset: -0.0420459
+    - vertices: p8(v43) p31(v18) p4(v2)
+    - neighboring facets: f172 f185 f181
+- f184
+    - flags: top simplicial
+    - normal:    0.2339  -0.9699 -0.06713
+    - offset: -0.03907209
+    - vertices: p8(v43) p9(v32) p12(v23)
+    - neighboring facets: f139 f186 f182
+- f185
+    - flags: top simplicial
+    - normal:    0.5126  -0.7403   0.4349
+    - offset: -0.03577829
+    - vertices: p8(v43) p11(v22) p4(v2)
+    - neighboring facets: f209 f183 f186
+- f186
+    - flags: top simplicial
+    - normal:    0.4689  -0.7689   0.4347
+    - offset: -0.03536931
+    - vertices: p8(v43) p12(v23) p11(v22)
+    - neighboring facets: f85 f185 f184
+- f187
+    - flags: bottom simplicial
+    - normal:   -0.8903  0.01823    0.455
+    - offset: -0.04188196
+    - vertices: p40(v44) p39(v24) p32(v1)
+    - neighboring facets: f92 f191 f206
+- f188
+    - flags: top simplicial
+    - normal:   -0.9913  -0.1121 -0.06913
+    - offset: -0.04200201
+    - vertices: p40(v44) p42(v33) p61(v5)
+    - neighboring facets: f179 f192 f208
+- f191
+    - flags: top simplicial
+    - normal:   -0.9881 -0.04181  -0.1479
+    - offset: -0.04361424
+    - vertices: p40(v44) p35(v9) p32(v1)
+    - neighboring facets: f60 f187 f192
+- f192
+    - flags: bottom simplicial
+    - normal:   -0.9818 -0.05755  -0.1811
+    - offset: -0.04283945
+    - vertices: p40(v44) p35(v9) p61(v5)
+    - neighboring facets: f53 f188 f191
+- f194
+    - flags: bottom simplicial
+    - normal:    0.4034  0.06273   0.9129
+    - offset: -0.04205681
+    - vertices: p57(v45) p56(v39) p11(v22)
+    - neighboring facets: f163 f211 f195
+- f195
+    - flags: top simplicial
+    - normal:    0.4539   0.1542   0.8776
+    - offset: -0.04925877
+    - vertices: p57(v45) p56(v39) p7(v31)
+    - neighboring facets: f200 f213 f194
+- f198
+    - flags: top simplicial
+    - normal:    0.2101    0.201   0.9568
+    - offset: -0.05306533
+    - vertices: p27(v46) p56(v39) p46(v6)
+    - neighboring facets: f162 f199 f200
+- f199
+    - flags: bottom simplicial
+    - normal:    0.2092   0.2012   0.9569
+    - offset: -0.05310437
+    - vertices: p27(v46) p16(v40) p46(v6)
+    - neighboring facets: f166 f198 f204
+- f200
+    - flags: bottom simplicial
+    - normal:    0.3242   0.1862   0.9275
+    - offset: -0.05216352
+    - vertices: p27(v46) p56(v39) p7(v31)
+    - neighboring facets: f195 f202 f198
+- f201
+    - flags: bottom simplicial
+    - normal:    0.3742   0.9094   0.1813
+    - offset: -0.2415042
+    - vertices: p27(v46) p24(v14) p23(v3)
+    - neighboring facets: f97 f203 f202
+- f202
+    - flags: bottom simplicial
+    - normal:    0.6721   0.6511   0.3526
+    - offset:  -0.181899
+    - vertices: p27(v46) p7(v31) p24(v14)
+    - neighboring facets: f175 f201 f200
+- f203
+    - flags: top simplicial
+    - normal:   -0.1155   0.9108   0.3963
+    - offset:  -0.229152
+    - vertices: p27(v46) p28(v11) p23(v3)
+    - neighboring facets: f75 f201 f204
+- f204
+    - flags: top simplicial
+    - normal:   -0.1535   0.4909   0.8576
+    - offset: -0.1188992
+    - vertices: p27(v46) p16(v40) p28(v11)
+    - neighboring facets: f166 f203 f199
+- f205
+    - flags: top simplicial
+    - normal:   -0.7243  -0.1039   0.6816
+    - offset: -0.03323581
+    - vertices: p41(v47) p39(v24) p30(v13)
+    - neighboring facets: f146 f207 f206
+- f206
+    - flags: top simplicial
+    - normal:   -0.8197 -0.05963   0.5696
+    - offset: -0.03677059
+    - vertices: p41(v47) p40(v44) p39(v24)
+    - neighboring facets: f187 f205 f208
+- f207
+    - flags: bottom simplicial
+    - normal:   -0.7735  -0.1549   0.6146
+    - offset: -0.03309906
+    - vertices: p41(v47) p42(v33) p30(v13)
+    - neighboring facets: f136 f205 f208
+- f208
+    - flags: bottom simplicial
+    - normal:   -0.8207   -0.136   0.5549
+    - offset: -0.03472542
+    - vertices: p41(v47) p40(v44) p42(v33)
+    - neighboring facets: f188 f207 f206
+- f209
+    - flags: bottom simplicial
+    - normal:     0.683  -0.1105    0.722
+    - offset: -0.04180091
+    - vertices: p43(v48) p11(v22) p4(v2)
+    - neighboring facets: f185 f210 f211
+- f210
+    - flags: top simplicial
+    - normal:    0.7442  0.01729   0.6677
+    - offset: -0.04255911
+    - vertices: p43(v48) p57(v45) p4(v2)
+    - neighboring facets: f215 f209 f211
+- f211
+    - flags: bottom simplicial
+    - normal:    0.6354 0.007705   0.7721
+    - offset: -0.04137582
+    - vertices: p43(v48) p57(v45) p11(v22)
+    - neighboring facets: f194 f209 f210
+- f212
+    - flags: bottom simplicial
+    - normal:     0.864  0.08774   0.4958
+    - offset: -0.04986496
+    - vertices: p45(v49) p18(v41) p7(v31)
+    - neighboring facets: f175 f213 f214
+- f213
+    - flags: top simplicial
+    - normal:    0.7648  0.09889   0.6366
+    - offset: -0.04823838
+    - vertices: p45(v49) p57(v45) p7(v31)
+    - neighboring facets: f195 f212 f215
+- f214
+    - flags: top simplicial
+    - normal:    0.9974  0.01497  0.07025
+    - offset: -0.04507268
+    - vertices: p45(v49) p18(v41) p4(v2)
+    - neighboring facets: f172 f215 f212
+- f215
+    - flags: bottom simplicial
+    - normal:    0.7453  0.01767   0.6665
+    - offset: -0.0425866
+    - vertices: p45(v49) p57(v45) p4(v2)
+    - neighboring facets: f210 f214 f213

@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+"""Generate the torso_arms variant: urdf/torso_arms.urdf, its simplified arm/palm meshes and its RSDF
+
+Arms come from human_description (same source as TorsoHeadLink.stl): the shoulder (3 joints),
+elbow, forearm and wrist (2 joints) chain of urdf/human.urdf, with its joint limits, masses and
+centers of mass. human.urdf's inertia tensors are not physically valid, so each link's inertia is
+a solid box the size of its mesh instead. Each arm link mesh is decimated on its own, as for the
+torso. Each hand is one convex mesh: human_description's open hand (meshes/{L,R}HandOpen.dae), cut at
+the wrist, with the thumb turned closer to the fingers, and replaced by its convex hull; it replaces the
+separate wrist and finger meshes.
+
+Requires: trimesh, pycollada, fast-simplification, shapely, numpy, qhull-bin (qconvex)
+
+Usage: python3 generate_torso_arms.py [path/to/human_description]  (default: ../../human_description)
+"""
+import shutil
+import subprocess
+import sys
+import tempfile
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+import numpy as np
+import trimesh
+
+PKG = Path(__file__).resolve().parent.parent
+HUMAN = Path(sys.argv[1]) if len(sys.argv) > 1 else PKG.parent / "human_description"
+# torso link origin above human_description's TorsoLink origin (torso.urdf's visual offset)
+TORSO_OFFSET = 0.20
+# Target face count per decimated mesh
+FACES = {"ArmLink": 120, "ElbowLink": 50, "ForearmLink": 120}
+# Hand meshes are cut where the wrist mesh starts (hand link frame, along the fingers' axis)
+WRIST_CUT = 0.011
+# Thumb (hand link frame: x across the palm toward the thumb, fingers along y): vertices beyond THUMB_X are
+# turned in the palm plane about THUMB_PIVOT (x, distance from the wrist along the fingers) toward the fingers,
+# by up to THUMB_CLOSE_DEG, ramping in over THUMB_RAMP so the thenar stays attached
+THUMB_X = 0.04
+THUMB_PIVOT = (0.04, 0.005)
+THUMB_RAMP = 0.02
+THUMB_CLOSE_DEG = 30.0
+COLOR = "0.0 0.0 0.25 0.5"
+
+human = ET.parse(HUMAN / "urdf" / "human.urdf").getroot()
+joints = {j.get("name"): j for j in human.findall("joint")}
+links = {l.get("name"): l for l in human.findall("link")}
+
+
+def load(name):
+    return trimesh.load(HUMAN / "meshes" / f"{name}.dae").to_geometry()
+
+
+def decimate(mesh, faces):
+    return mesh.simplify_quadric_decimation(face_count=faces)
+
+
+def close_thumb(mesh, sign):
+    """Turn the thumb toward the fingers; sign is the fingers' direction along y"""
+    v = mesh.vertices.copy()
+    x, s = v[:, 0] - THUMB_PIVOT[0], sign * v[:, 1] - THUMB_PIVOT[1]  # s: along the fingers
+    a = np.radians(THUMB_CLOSE_DEG) * np.clip((v[:, 0] - THUMB_X) / THUMB_RAMP, 0.0, 1.0)
+    a[sign * v[:, 1] > 0.09] = 0.0  # fingers
+    x, s = x * np.cos(a) - s * np.sin(a), x * np.sin(a) + s * np.cos(a)
+    v[:, 0], v[:, 1] = x + THUMB_PIVOT[0], sign * (s + THUMB_PIVOT[1])
+    return trimesh.Trimesh(v, mesh.faces)
+
+
+def box_inertia(mass, mesh):
+    ex = mesh.bounds[1] - mesh.bounds[0]
+    return mass / 12.0 * np.array([ex[1] ** 2 + ex[2] ** 2, ex[0] ** 2 + ex[2] ** 2, ex[0] ** 2 + ex[1] ** 2])
+
+
+def inertial_xml(link, mesh=None):
+    i = links[link].find("inertial")
+    mass = float(i.find("mass").get("value"))
+    com = i.find("origin").get("xyz")
+    if mesh is None:  # massless-looking intermediate links: keep human.urdf's tiny values
+        ixx = iyy = izz = float(i.find("inertia").get("izz"))
+    else:
+        ixx, iyy, izz = box_inertia(mass, mesh)
+    return (f'\t\t<inertial>\n\t\t\t<origin xyz="{com}" rpy="0 0 0" />\n\t\t\t<mass value="{mass}" />\n'
+            f'\t\t\t<inertia ixx="{ixx:.6g}" ixy="0" ixz="0" iyy="{iyy:.6g}" iyz="0" izz="{izz:.6g}" />\n\t\t</inertial>\n')
+
+
+def link_xml(name, inertial, mesh_file=None):
+    s = f'\t<link name="{name}">\n{inertial}'
+    if mesh_file:
+        s += (f'\t\t<visual>\n\t\t\t<origin xyz="0 0 0" rpy="0 0 0" />\n\t\t\t<geometry>\n'
+              f'\t\t\t\t<mesh filename="package://torso_description/meshes/{mesh_file}" />\n\t\t\t</geometry>\n'
+              f'\t\t\t<material name="SemiTransparentNavy">\n\t\t\t\t<color rgba="{COLOR}" />\n'
+              f'\t\t\t</material>\n\t\t</visual>\n')
+    return s + "\t</link>\n\n"
+
+
+def joint_xml(name, parent, z_offset=0.0):
+    j = joints[name]
+    o = j.find("origin")
+    xyz = [float(v) for v in o.get("xyz").split()]
+    xyz[2] += z_offset
+    lim = j.find("limit")
+    return (f'\t<joint name="{name}" type="{j.get("type")}">\n\t\t<parent link="{parent}" />\n'
+            f'\t\t<child link="{j.find("child").get("link")}" />\n'
+            f'\t\t<origin xyz="{xyz[0]:g} {xyz[1]:g} {xyz[2]:g}" rpy="{o.get("rpy")}" />\n'
+            f'\t\t<axis xyz="{j.find("axis").get("xyz")}" />\n'
+            f'\t\t<limit lower="{lim.get("lower")}" upper="{lim.get("upper")}" effort="{lim.get("effort")}" '
+            f'velocity="{lim.get("velocity")}" />\n\t</joint>\n\n')
+
+
+hull_meshes = {}
+urdf = ['<?xml version="1.0" ?>\n<!-- Generated by scripts/generate_torso_arms.py -->\n<robot name="torso_arms">\n']
+# Torso: same link as urdf/torso.urdf
+torso = ET.parse(PKG / "urdf" / "torso.urdf").getroot().find("link")
+ET.indent(torso, space="\t", level=1)
+urdf.append("\t" + ET.tostring(torso, encoding="unicode").strip() + "\n\n")
+
+for side, sign in (("L", 1.0), ("R", -1.0)):
+    print(f"--- {side} arm")
+    meshes = {}
+    for part, source in (("ArmLink", f"{side}ArmLinkFull"), ("ElbowLink", f"{side}ElbowLink"),
+                         ("ForearmLink", f"{side}ForearmLink")):
+        m = load(source)
+        meshes[part] = decimate(m, FACES[part])
+        print(f"{source}: {len(m.faces)} -> {len(meshes[part].faces)} faces")
+    # One convex open palm per hand: cut away the wrist stub, keep the hand from the wrist line on, close the
+    # thumb a bit, take the convex hull
+    hand = load(f"{side}HandOpen")
+    cut = hand.slice_plane(plane_origin=[0, -sign * WRIST_CUT, 0], plane_normal=[0, sign, 0])
+    meshes["Palm"] = close_thumb(cut, sign).convex_hull
+    print(f"{side}HandOpen: {len(hand.faces)} -> cut {len(cut.faces)} -> convex {len(meshes['Palm'].faces)} faces")
+    files = {}
+    for part, m in meshes.items():
+        files[part] = f"{side}{part.replace('Link', '')}.stl"
+        m.export(PKG / "meshes" / files[part])
+
+    chain = [  # (joint, parent link, mesh part of the child link)
+        (f"{side}Arm_0", "torso", None), (f"{side}Arm_1", f"torso2{side.lower()}shoulder_1", None),
+        (f"{side}Arm_2", f"torso2{side.lower()}shoulder_2", "ArmLink"), (f"{side}Elbow", f"{side}ArmLink", "ElbowLink"),
+        (f"{side}Forearm", f"{side}ElbowLink", "ForearmLink"),
+        (f"{side}Wrist_0", f"{side}ForearmLink", None), (f"{side}Wrist_1", f"forearm2{side.lower()}wrist_1", "Palm"),
+    ]
+    for joint, parent, part in chain:
+        child = joints[joint].find("child").get("link")
+        urdf.append(joint_xml(joint, parent, -TORSO_OFFSET if parent == "torso" else 0.0))
+        mesh = meshes.get(part)
+        if mesh is not None:
+            hull_meshes[child] = mesh
+        urdf.append(link_xml(child, inertial_xml(child, mesh), files.get(part)))
+
+urdf.append("</robot>\n")
+(PKG / "urdf" / "torso_arms.urdf").write_text("".join(urdf))
+
+# Convex hulls for collision checks, one per link with a mesh, in the link frame
+convex_dir = PKG / "convex" / "torso_arms"
+convex_dir.mkdir(parents=True, exist_ok=True)
+
+
+def write_hull(link, vertices):
+    with tempfile.NamedTemporaryFile("w", suffix=".qc") as cloud:
+        cloud.write(f"3\n{len(vertices)}\n" + "".join(f"{p[0]} {p[1]} {p[2]}\n" for p in vertices))
+        cloud.flush()
+        subprocess.run(["qconvex", "TI", cloud.name, "TO", str(convex_dir / f"{link}-ch.txt"), "Qt", "o", "f"],
+                       check=True, stdout=subprocess.DEVNULL)
+
+
+torso_mesh = trimesh.load(PKG / "meshes" / "TorsoHeadLink.stl")
+write_hull("torso", torso_mesh.vertices + np.array([0.0, 0.0, -TORSO_OFFSET]))
+for link, mesh in hull_meshes.items():
+    write_hull(link, mesh.vertices)
+
+# Same surfaces as the torso
+rsdf_dir = PKG / "rsdf" / "torso_arms"
+rsdf_dir.mkdir(parents=True, exist_ok=True)
+shutil.copy(PKG / "rsdf" / "torso" / "torso.rsdf", rsdf_dir / "torso_arms.rsdf")
+print("Wrote urdf/torso_arms.urdf, meshes/{L,R}{Arm,Elbow,Forearm,Palm}.stl, convex/torso_arms/, rsdf/torso_arms/")

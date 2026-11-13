@@ -39,6 +39,8 @@ else()
 
 endif()
 
+install(DIRECTORY convex/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/convex)
 install(DIRECTORY meshes/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)
 install(DIRECTORY rsdf/
